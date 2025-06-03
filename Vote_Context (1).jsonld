@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nYoroi as a DRep votes Yes on the info governance action.\n\nOverview\n\nThe Amaru project seeks ₳1.5M to further develop an alternative node implementation for Cardano, providing flexibility and security to the ecosystem. This proposal directly supports Cardano's decentralization and the long-term growth of the network.\nWhy We Support the Proposal\n\nExpanding Developer Participation: \n\nAmaru’s Rust-based node offers flexibility for developers, addressing the limitations of the current Haskell-based node. This will encourage broader participation from developers, including those outside the Cardano ecosystem.\n\nBoosting DeFi Potential: \n\nThe introduction of Amaru is a valuable opportunity to accelerate the growth of decentralized finance (DeFi) on Cardano. As more developers from diverse backgrounds join the ecosystem, the DeFi landscape will expand, creating more opportunities for innovation and adoption.\n\nFostering Ecosystem Resilience: \n\nReducing reliance on a single node implementation will increase the network's security and resilience. The diversity in node implementations ensures that Cardano will remain robust and available even if issues arise with one node option.\nDriving Long-term Growth: While organic adoption is important, we recognize the need for a strategic approach to foster the adoption of Amaru. We believe that with the right focus, Amaru will contribute to long-term growth and further decentralization of the Cardano ecosystem.\n\nConclusion\nWe fully support the Amaru proposal as it aligns with our vision for a more decentralized, secure, and resilient Cardano ecosystem. By offering an alternative node, Amaru will provide the necessary flexibility and foster a more vibrant ecosystem, including the growth of DeFi. We are confident that this project will support Cardano’s continued evolution and enhance its competitive edge.\n\n\n\n\n\n\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
