@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Yoroi, as a DRep, votes Yes on this Info Action regarding Cardano Blockchain Ecosystem Budget - 275M ada Administered by Intersect (e14de8d9dc4f4ddf3fe9250a8a926e20f10e99b86bd0610b77d7a054981591ee00) based on the rationale below\n\nRationale\n\nCoordinated and Accountable Budgeting: The Info Budget Action presents a clear structure for organizing and signaling support for ecosystem-critical initiatives through 39 proposals backed by the Cardano community, while preserving accountability in how treasury funds are released and monitored.\n\nSecure Fund Oversight: With Intersect as the administrator, built-in controls like multisig wallets, milestone tracking, and due diligence strengthen transparency and protect treasury resources.\n\nSupport for Ecosystem Growth Including DeFi: Many proposals within this budget aim to improve infrastructure, scalability, and developer tools, laying the groundwork for future DeFi innovation on Cardano.\n\nIn conclusion, Yoroi sees this as a major milestone in Cardano’s journey toward transparent, decentralized governance, and is proud to support this step forward. "
+  },
+  "hashAlgorithm": "blake2b-256"
+}
