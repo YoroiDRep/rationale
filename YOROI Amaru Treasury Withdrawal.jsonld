@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nYoroi votes Yes on the Treasury Withdrawal governance action titled Amaru Treasury Withdrawal 2025 based on the rationale below.\n\nRationale\n\nEssential for Cardano’s growth: Funding Amaru will enable the development of a much-needed alternative node implementation, reducing reliance on a single Haskell-based node and encouraging innovation, security, and developer adoption in the ecosystem.\n\nTransparent and auditable process: Intermediary smart contracts and on-chain metadata ensure that all treasury transactions are clear, trackable, and easily auditable, supporting strong financial oversight.\n\nResponsible and efficient budgeting: We trust the team to manage these funds responsibly, as their proposed budget is efficient, transparent, and clearly reflects thoughtful planning.\nIn summary, in continuation of our previous YES vote on Amaru’s info action, we remain committed to supporting this important initiative."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
