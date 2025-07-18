@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nYoroi votes YES to support the continued maintenance and improvement of Cardano.nix by MLabs. \n\nRationale\n\nReproducible Infrastructure: Cardano.nix simplifies building and deploying Cardano nodes and infrastructure with Nix, ensuring reproducibility and reducing configuration errors for SPOs and developers.\n\nAdopted by Key Stakeholders: The tool is already used by major Cardano ecosystem players like IOG and the Daedalus team, indicating its established importance.\n\nProvide High Impact: The proposal is focused, clearly scoped, and led by a capable team (MLabs) with a reliable track record in ecosystem tooling and DevOps.\n\nYoroi believes the continuity of infrastructure tools like Cardano.nix is essential for a stable and scalable Cardano ecosystem. Supporting this initiative aligns with our value of fostering open-source reliability and developer-friendly environments."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
