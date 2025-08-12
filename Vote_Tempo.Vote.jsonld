@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nYoroi DRep casts a NO vote on the Budget Info governance action titled Tempo for Cardano Governance – Maintenance & Development Budget for 2025.\n\nRationale\n\nYoroi DRep values the spirit behind Tempo. Its focus on independent infrastructure and commitment to creating smoother, mobile-first governance experiences is something we believe the Cardano ecosystem needs more of. That said, this particular proposal lacks the transparency and structure required for us to signal support at this time.\n\nThere is limited visibility into the team behind the project, no clear accountability framework, and no explanation of how Selfdriven will govern and report on the use of treasury funds.\n\nWe see the potential in Tempo.Vote, but cannot endorse this iteration. Yoroi DRep encourages the team to resubmit with a more transparent, community-accountable approach so the broader Cardano ecosystem can confidently evaluate and support it."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
