@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Yoroi DRep votes to ABSTAIN on the governance action titled Cardano Blockchain Ecosystem Constitution v2.0.\nRationale\n\nWe value the effort to improve the Constitution, especially the clarifications and cleanup of definitions.\nAt the same time, removing the budget info action weakens financial transparency around treasury withdrawals.\n\nThe changes to the auto-abstain safeguard reduce clarity on its role, and these updates weren’t broadly discussed with the community. The proposal moved on-chain while feedback was still being raised, signaling that consensus has not yet been reached\n\nConclusion\nAbstaining allows Yoroi DRep to recognize the improvements made, while also signaling that more discussion and ecosystem input are needed before proposing such important constitutional changes. We encourage continued dialogue and active participation from all stakeholders to build stronger alignment for future updates."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
