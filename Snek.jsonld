@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nYoroi DRep votes YES on the governance action to fund “₳5M Loan for Cardano’s Global Listing Expansion - Powered by SNEK.”\n\nRationale\n\nNew model of accountability: This is the first loan-based Treasury request, adding a new dimension to governance by complementing the existing grant-based model, with repayment at 2.44% APR to strengthen fiscal responsibility.\n\nProven execution capacity: SNEK has already self-funded $4.5M and successfully secured Tier 1 listings on Kraken, Crypto.com, and KuCoin, demonstrating credibility and delivery track record.\n\nEcosystem-wide benefit: Expanding SNEK listings also expands ADA liquidity, increases Cardano’s visibility in mainstream markets, and builds reusable legal/technical frameworks for future Cardano native tokens.\n\nConclusion\n\nYoroi DRep supports this governance action as a step forward in responsible Treasury usage. In the next Treasury Withdrawal governance action, however, we expect the proposers to provide a clear repayment plan and more detailed success metrics to ensure accountability and measurable ecosystem impact.\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
