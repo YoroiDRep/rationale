@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary:\n\nYoroi DRep votes YES on the governance action to fund GovTool – Treasury Withdrawal for 12 months of active maintenance and development, following the previously approved Budget Info Action (gov_action1n5sn54mgf47a7men2ryq6ppx88kta4wvenz2qkl4f9v6ppje8easqxwm88m) for ₳1.15M.\n\nRationale:\n\nThis withdrawal faithfully aligns with the intent of the approved Info Action that Yoroi DRep supported. It maintains the same scope, community-owned model, and transparent execution through Intersect’s smart contract framework.\n\nThe proposal now includes clearer delivery assurance, milestone verification, and oversight through independent third parties, strengthening accountability and constitutional compliance.\n\nConclusion:\n\nYoroi DRep reaffirms its support for GovTool as essential governance infrastructure and votes YES, recognizing the improved operational framework and sustained alignment with Cardano’s principles of openness and community participation."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
