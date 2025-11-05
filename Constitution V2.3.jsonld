@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nYoroi DRep votes NO on the governance action to adopt Cardano Constitution v2.3.\n\nRationale\n\nYoroi would like to sincerely thank Yuta for the time, care, and consistency he’s shown in leading the continued evolution of the Cardano Constitution. The community benefits greatly from these ongoing discussions and refinements, and we recognize how much thoughtful work went into v2.3.\n\nThat said, after careful review, we believe several revisions in this version could unintentionally reduce clarity or weaken existing safeguards that protect Cardano’s decentralized decision-making process.\n\nAudit Requirement:\n\nThe new phrasing around audits (“appoint independent auditors”) creates practical uncertainty over who is responsible for selection, funding, and timing. The previous version already offered a clear and effective standard through Intersect’s audit process, which ensured accountability without procedural confusion.\n\nCustodian Consent:\n\nExpanding the clause to let custodians “vote or delegate” on behalf of ADA holders, combined with the term shift from “owners” to “holders,” introduces potential ambiguity over user consent and could concentrate voting power among large custodial entities.\nEach of these points could likely be addressed through clarification and community alignment, but together they present enough risk to justify a cautious NO vote at this stage.\n\nConclusion\n\nYoroi deeply appreciates Yuta’s continuous effort to make Cardano’s Constitution more complete and approachable. This No vote is not a rejection of that work, it’s a call for more dialogue before codifying these specific changes. We’re very happy to work together and help facilitate open discussion toward a future version that strengthens both clarity and decentralization in Cardano’s governance."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
