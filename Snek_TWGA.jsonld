@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nYoroi DRep votes YES on the governance action to fund “₳5M Loan for Cardano’s Global Listing Expansion – Powered by SNEK.” This decision reaffirms our previous support expressed during the Budget Info Action stage, with the rationale below.\n\nRationale\n\nPioneering Loan-Based Model:\nThis proposal introduces a new standard of fiscal responsibility within Cardano governance, establishing a repayable Treasury loan with a defined 2.44% annual interest rate. It represents a shift toward sustainable capital deployment, ensuring that community funds are productively used and returned to the Treasury for future growth.\n\nStrong Execution Record and Proven Impact:\n\nThe Snek Foundation’s past success in self-funding Tier 1 exchange listings, on Kraken, Crypto.com, and KuCoin, demonstrates both capability and commitment. The foundation’s ability to deliver tangible outcomes reinforces trust in its capacity to execute on this expanded initiative responsibly.\n\nTransparent Oversight and Smart Contract Administration:\n\nThe proposal’s use of Intersect’s audited treasury smart contract framework, along with milestone-based disbursements and third-party audits, provides a high degree of transparency and accountability. This structured oversight gives the community confidence that funds will be managed and repaid in alignment with Treasury governance standards.\n\nConclusion\n\nYoroi DRep supports this Treasury Withdrawal as a continuation of its earlier endorsement. We trust that the Snek Foundation will uphold the community’s confidence by managing these funds with integrity, transparency, and strong execution, delivering tangible results that benefit not only SNEK holders but the broader Cardano ecosystem."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
