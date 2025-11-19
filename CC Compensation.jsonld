@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nYoroi votes ABSTAIN on the Budget Info Action to compensate Constitutional Committee members. We are strongly supportive of CC compensation, as outlined in the Cardano Constitution. However, several aspects of this proposal require further clarification before it can be fully endorsed.\n\nRationale\nYoroi strongly supports ensuring that CC members receive appropriate compensation, consistent with the Constitution’s provision that CC members may be compensated for their efforts. Their constitutional responsibilities are central to maintaining Cardano’s governance and long-term system integrity.\n\nHowever, while we fully agree with the principle, the requested 1,000,000 ADA lacks a clear explanation of how the total was derived and what underlying assumptions it represents. Without this clarity, we find it challenging to understand the intended scope, proportionality, and sustainability of the model.\n\nYoroi believes that a structured discussion among relevant stakeholders would be valuable to mature the proposal. Such a forum would help clarify objectives, align expectations, and establish shared assumptions before progressing toward a Treasury Withdrawal.\n\nIn conclusion, Yoroi supports the constitutional principle that CC members may be compensated but abstains on this version to encourage clearer details and aligned expectations before funding is requested. We also believe a focused stakeholder forum would help consolidate information and refine the assumptions needed for a well-structured compensation model.\n\nPotential Discussion Points for the Forum:\n\nTo support the development of a clear and shared compensation model, Yoroi suggests that a dedicated stakeholder forum could explore the following topics:\n\nHow should compensation be structured to incentivize timely and high-quality rationalization for proposers?\n\nWhat mechanisms should be used to determine appropriate compensation levels?\n\nOn what criteria should payment be triggered?\n\nShould compensation be paid in ADA or in stablecoins?\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
