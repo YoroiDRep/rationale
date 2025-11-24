@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "\nYoroi DRep votes YES on the governance action titled “Reimburse Ikigai Info Governance Action Deposit.”\nThe original Ikigai Info governance action was submitted soon after Chang, during the very early phase of on-chain governance, and the 100,000 ADA deposit was lost because of a node bug, not the user's fault.\n\nThe Cardano community has repeatedly expressed support for reimbursing this deposit once technically possible, which aligns with fairness toward early governance participants.\n\nHowever, this proposal does not clearly state:\n\nWho exactly is submitting the request now.\n\nWhat is their relationship to the original Ikigai proposer.\n\nWithout this information, there remains a possibility (even if small) that the original author may have chosen to treat the deposit as a voluntary contribution to the Treasury.\n\nThe proposal also requests an additional 3,000 ADA for lost staking rewards, Midnight airdrop eligibility, and other opportunity costs, but provides no methodology for how this number was derived.\n\nConclusion:\nYoroi DRep decided to vote YES on this budget info action to reflect the community’s intent to fairly reimburse funds lost due to a protocol bug. However, we expect the following Treasury Withdrawal to clearly confirm the original proposer’s consent, clarify the claimant’s identity and relationship to them, and clarify how the additional 3,000 ADA was calculated."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
