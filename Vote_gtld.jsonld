@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nYoroi DRep votes YES to support this Info action by Cardano Foundation to secure the .ada and .cardano top-level domains (gTLDs).\n\nRationale\nYoroi appreciates the Cardano Foundation’s initiative in taking proactive steps to protect and strengthen Cardano’s digital identity. This proposal represents a practical and forward-looking move that benefits the entire ecosystem.\n\nProtecting Cardano’s Digital Identity:\nSecuring the .ada and .cardano domains ensures that Cardano’s name and brand are protected from misuse or external control, reinforcing trust and long-term credibility across the ecosystem.\n\nEcosystem Benefit:\nCardano Foundation’s decision to fund this initiative using its own resources demonstrates accountability and stewardship. This approach safeguards community resources while still delivering an ecosystem-wide benefit.\n\nConclusion\nYoroi DRep votes YES with confidence and appreciation for this responsible, community-minded initiative. The action protects Cardano’s brand, strengthens its digital footprint, and sets a positive precedent for proactive, transparent governance decisions that serve the ecosystem’s long-term interests."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
