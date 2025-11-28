@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nYoroi DRep votes YES on the Cardano Critical Integrations Budget Info Action. We believe this proposal is the direct and timely way to close Cardano’s critical integration gaps and unlock the next phase of ecosystem growth.\n\nRationale\n\nEcosystem Critical Integrations\n\nYoroi believes this proposal establishes a strategic integration fund to onboard critical infrastructure Cardano needs for large-scale economic activity and external liquidity integration. The scope targets tier one stablecoins, oracle networks, cross-chain bridges, institutional digital asset custody and wallet infrastructures, and on-chain analytics platforms.\n\nImpact on Adoption\n\nThese integrations strengthen Cardano’s ability to attract external capital, support advanced DeFi use cases, and accelerate efforts in Real World Assets and DePin. They also support Cardano’s path to profitability through stronger fee-generating activity.\n\nGovernance, safeguards, and urgency\n\nThe funds will be administered by Intersect under Article IV through publicly auditable addresses designated exclusively for this proposal and delegated to the Auto Abstain DRep, with milestone-based drawdowns, bi-annual reporting, and annual independent audits, which Yoroi believes are aligned with the Cardano Constitution and its requirements for transparent treasury administration. With negotiations already mature and the Net Change Limit expiring on 4 January 2026, progressing this budget now is timely.\n\nConclusion\n\nYoroi DRep supports this Budget Info Action because it is necessary, well-structured, and time-sensitive. Therefore, we strongly vote YES."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
