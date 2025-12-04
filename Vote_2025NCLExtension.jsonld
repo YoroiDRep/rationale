@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nYoroi DRep votes YES on the 2025 Net Change Limit Extension Info Action. We support this as a necessary measure to ensure that ongoing Treasury processes remain uninterrupted and constitutionally compliant.\n\nRationale\n\nCritical Integrations Budget timing\n\nThe Net Change Limit (NCL) sets a withdrawal limit for the Cardano treasury over a defined period, and the current NCL expires at the conclusion of Epoch 604. Extending it by eight epochs will help keep the current limit active long enough for the Critical Integrations Budget to be enacted within the budget that the community has approved, rather than being pushed into the next NCL period.\n\nMaintaining the treasury safeguard\n\nThe extension does not raise or reset the ₳350M limit. It only extends the timeframe, with prior spending still counted inside the same ceiling. This keeps treasury discipline exactly as the community approved it.\n\nA healthy governance collaboration\n\nYoroi gives credit to the proposers for moving quickly on this on-chain safeguard. It reflects a strong alignment between the founding entities and the community, showing that we support each other when governance requires a timely bridge.\n\nConclusion\nYoroi DRep supports this extension because it upholds the Critical Integrations Budget timeline, maintains the current NCL cap, and demonstrates healthy governance collaboration. Therefore, we vote YES."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
