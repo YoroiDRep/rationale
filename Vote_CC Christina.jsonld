@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nYoroi DRep votes NO on the governance action titled “Add Constitutional Committee Member – Christina.” This decision reflects a cautious view on how risk mitigation measures should be shaped through broader ecosystem input.\n\nRationale\n\nElection scope and mandate\n\nThe Intersect snap election was held to select one replacement Constitutional Committee member. Cardano Curia was chosen through that process, and the outcome does not provide a mandate to appoint an additional member.\n\nEcosystem alignment before structural change\n\nIf the intention is to mitigate operational risk by operating above the minimum committee size, this should be treated as a governance design question that involves wider community perspectives. Rather than proceeding through an ad hoc addition following a narrowly scoped election, an Info action could be submitted first to gather ecosystem feedback, evaluate alternatives, and build shared expectations before any New Committee governance action is proposed.\n\nConclusion\n\nYoroi DRep votes NO on this proposal and encourages a community-informed, ecosystem-aligned approach before making structural changes to the Constitutional Committee."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
