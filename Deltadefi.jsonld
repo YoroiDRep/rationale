@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nYoroi DRep votes NO on DeltaDeFi: Hydra Trading Infrastructure Budget (₳1,500,000). We appreciate the DeltaDeFi team’s continued efforts and commitment to building on Cardano. However, at this stage, we are not convinced that the proposal clearly demonstrates tangible, user-facing benefits or readiness for Treasury-level support.\n\nRationale\n\n• Unclear Benefit to ADA Holders and End Users\n\nWhile positioned as infrastructure, the proposal does not clearly explain how this directly benefits ADA holders in practice. Improved infrastructure alone does not guarantee better user outcomes, and the link between this DEX’s activity and broader ecosystem value remains unclear.\n\n• Insufficient Clarity on Trust Model and User Risk\n\nKey aspects of the Hydra setup remain unclear from a user perspective, including custody assumptions, failure scenarios, and protections if operators are unavailable. This makes it difficult for users to assess risks and trade-offs.\n\n• Outcomes Cannot Be Reliably Evaluated Within the Proposed Timeframe\n\nSix months may be sufficient to deliver the product, but it is too short to assess real adoption, sustained liquidity, or long-term relevance. As a result, it is unclear whether outcomes that matter most to users, such as liquidity, reliable execution, and user growth, can be meaningfully evaluated.\n\nConclusion\n\nYoroi believes that at this funding level, proposals benefit from clearly articulated user-facing value, trust assumptions, and measurable outcomes. Further clarity in these areas would help support a stronger case for Treasury funding in the future."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
