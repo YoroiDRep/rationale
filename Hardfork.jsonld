@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nYoroi DRep votes YES on the proposal to name Protocol Version 11 the van Rossem Hard Fork, honoring Max van Rossem’s meaningful contributions to Cardano’s governance and community.\n\nRationale\n\n• Alignment with Cardano Tradition\nCardano has an established practice of naming hard forks after individuals who have made significant contributions to the ecosystem. This proposal is consistent with that tradition.\n\n• Recognition of Governance Contributions\nMax van Rossem played an important role in Cardano’s governance development, including constitutional work, governance discussions, and community representation. Recognizing his impact through this naming is appropriate and respectful.\n\nConclusion\nYoroi supports this proposal as a fitting tribute that aligns with Cardano’s values and governance culture, and therefore votes YES."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
