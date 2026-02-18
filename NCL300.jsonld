@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nYoroi DRep votes NO on the proposed 300M ADA Net Change Limit for Epochs 613–713. While we understand the intention to reinforce fiscal discipline due to market situation, we believe reducing the ceiling at this stage may be premature given the timeframe and current ecosystem dynamics.\n\nRationale\n\n• Measurable accountability through 2030 KPIs\n\nWith the 2030 Cardano KPIs now in place, treasury allocations can be assessed against clearer long-term targets. Yoroi believes spending discipline should be reinforced through KPI alignment, proposal-level scrutiny, and milestone-based controls rather than by tightening the structural ceiling itself.\n\n• Timeframe concern and market variability\n\nThe 17-month window increases uncertainty. In a lower ADA price environment, fiat-denominated costs require more ADA, and a tighter cap could unintentionally constrain legitimate initiatives that arise during this period.\n\n• Structural flexibility for ecosystem priorities\n\nThe Net Change Limit defines a maximum boundary, not a spending target. Maintaining sufficient flexibility at the structural level allows governance to respond to critical infrastructure and ecosystem needs while continuing to apply strict oversight at the proposal level.\n\nConclusion\n\nYoroi supports responsible treasury management and clear accountability standards. However, given the duration of the period and current conditions, Yoroi considers a reduction to 300M to be premature and therefore votes No."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
