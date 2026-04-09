@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Yoroi DRep votes YES on \"Dingo: a Production-Grade Block Producer in Go by Blink Labs.\" Yoroi views this proposal as a constructive contribution to Cardano’s long-term infrastructure resilience and multi-client strategy.\nRationale\n• Node diversity and resilience\n Yoroi supports initiatives that strengthen network resilience by reducing dependence on a single node implementation. A Go-based node meaningfully contributes to a more robust and fault-tolerant Cardano infrastructure.\n• Blink Labs’ contribution and delivery credibility\nBlink Labs has demonstrated consistent commitment to Cardano through active open-source contributions and clear progress on Dingo. Their existing work provides confidence in their ability to continue delivering on this proposal.\n• Alignment with Cardano’s long-term direction\nYoroi views this proposal as supportive of Cardano’s evolution toward a multi-client ecosystem and consistent with its broader 2030 strategic direction. In addition, a Go-based implementation expands accessibility, enabling a broader range of developers to engage with and contribute to core infrastructure.\nConclusion\nYoroi supports this proposal as a positive step toward broader node diversity and stronger infrastructure for the Cardano ecosystem. Yoroi looks forward to seeing Blink Labs continue building and delivering on this effort for the benefit of the wider Cardano community."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
