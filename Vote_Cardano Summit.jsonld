@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary \nYoroi DRep votes YES on the \"Revised Cardano Summit 2026 Singapore\" by the Cardano Foundation. This position reflects our support for the strategic location, the optimized budget, and the anticipated return on investment for the ecosystem. By aligning with major global industry movements, we ensure Cardano remains at the forefront of the 2030 Vision.\n\nRationale\nMaximizing Ecosystem Visibility and Community Value\n- Competitive Market Presence: It is a standard industry reality that every leading Layer 1 protocol hosts a flagship summit; Cardano’s proposal is not only competitively priced but represents a significantly more efficient spend than many of our direct peers.\n\n- The Visibility Multiplier: Co-locating with TOKEN2049 allows us to leverage the massive concentration of international talent, developers, and media already in the city. This creates a \"halo effect\" where Cardano builders are positioned to capture the attention of over 25,000 external participants and potential partners.\n\n- Community Cost-Efficiency: By anchoring the Summit to the TOKEN2049 calendar, community members can attend two of the world's largest crypto events in a single trip, significantly reducing their individual travel, lodging, and logistics expenses.\n\n- Strategic Hub: Singapore's geographic advantage ensures that Cardano’s technical milestones are showcased within a high-density environment, providing brand exposure that would be far more costly to generate in isolation.\n\nProportionality and Fiscal Leanliness\n- The revised proposal directly addresses concerns regarding treasury impact through a budget reduced by 22% ($550,000).\n\n- This was achieved through intelligent streamlining, moving from three stages to two, which lowers production costs without compromising the tier-one experience required for an L1 blockchain.\n\n- By increasing internal resource contributions to $380,000, the Foundation has reduced external vendor reliance and optimized the use of community funds.\nImportantly, this proposal is fully decoupled from EMURGO’s TOKEN2049 sponsorship, ensuring a clean and transparent funding structure.\n\nCommunity Engagement and Vision 2030\n- A core pillar of our support is the value provided back to the builders, specifically the inclusion of discounted tickets for community members based on on-chain activity.\n\n- This ensures that the Summit remains accessible to the individuals who build on the network daily, keeping the event rooted in our decentralized community and the Cardano Vision 2030.\n\nAccountability and Agreed KPIs\n- Yoroi fully agrees with the proposed KPIs, which offer a clear framework for evaluating success through live demos, developer engagement, and enterprise leads.\n\n- The commitment to full KPI transparency and smart contract-based disbursement provides the high level of accountability we demand for treasury withdrawals.\n\nConclusion\nYoroi fully supports the vision and execution plan for the Cardano Summit 2026 in Singapore, basing our YES vote on the strategic timing, the responsible budget reduction, and the clear focus on driving adoption for our builders.\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
