@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nYoroi DRep votes YES on the Cardano Maintenance Initiative, as the foundational operational expenditure underpinning every other initiative currently being funded from the Cardano treasury.\n\nRationale\n\nNon-discretionary infrastructure  \n\nMaintenance is continuous and non-optional. The nine functional areas covered constitute the minimum viable operating surface for Cardano as a production network. Gaps in any of them carry direct consequences for SPOs, developers, and end users.\n\nEverything else depends on this  \n\nThe Cardano Blueprint enables node diversity. E2E testing and release management make hard forks safe. Performance benchmarking enables evidence-based parameter decisions. This proposal is not parallel to the ecosystem’s other priorities. It is the substrate they rest on.\n\nProportionate cost for genuine scope \n\nNine months of cross-functional delivery across engineering, DevOps, QA, performance, security, documentation, and release management. IO’s prior track record of treasury accountability further supports confidence in delivery.\n\nConclusion\n\nYoroi votes YES. A well-maintained Cardano is not one option among many. It is the precondition for the ecosystem’s 2030 ambitions to be realised at all.\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
