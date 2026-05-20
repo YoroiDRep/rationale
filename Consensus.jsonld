@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nYoroi DRep votes YES on “IO: Consensus Initiative”, as the proposal that directly determines whether Cardano can meet its 2030 throughput targets and sustain economic self-sufficiency as the Reserve diminishes.\n\nRationale\n\nThe primary scaling lever  \n\nLeios is how Cardano gets from 800,000 to 27 million monthly transactions. No combination of parameter tuning or incremental optimisation closes a gap of that magnitude. This proposal funds the critical path.\n\nBuilt on demonstrated progress  \n\nThe 2025/26 cycle delivered a public testnet and a feature-complete alpha. This proposal is the maturation phase of work already underway, with formal specification conformance, adversarial testing, and hard fork enablement as its defined outputs.\n\nEcosystem readiness included in scope  \n\nSPO workshops, developer documentation, DB-Sync and Mithril support, and updated governance artifacts are all part of this proposal. Hard fork readiness is treated as a shared responsibility, not an afterthought.\n\nConclusion\n\nYoroi votes YES. Leios is not a discretionary upgrade. It is the mechanism by which Cardano’s stated 2030 commitments become technically achievable, and this proposal represents the right investment at the right moment in its development."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
