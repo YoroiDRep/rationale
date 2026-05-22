@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nYoroi DRep votes ABSTAIN on \"IO & Midgard Labs: L2 Scalability Initiative.\" While Yoroi recognises the importance of Layer 2 infrastructure for Cardano's long-term competitiveness, the structure of this proposal makes a considered YES difficult to justify at this time.\nRationale\nThe Hydra workstream has clear and immediate justification. \nDelta DeFi and Masumi represent live production commitments that give the Hydra hardening work a specific and demonstrable ecosystem rationale. Yoroi would find it straightforward to support this component independently, precisely because it is anchored in demonstrated demand rather than projected future adoption.\n\nThe bundled structure creates an uneven evaluation problem. \nThe same vote that covers mature Hydra work also funds early-stage data availability research and the mainnet push for a rollup still resolving its multi-operator coordination model. These components sit at very different points on the maturity curve, and an all-or-nothing governance action does not give DReps a proportionate way to engage with that difference.\n\nClearer separation would strengthen the case for each workstream. \nYoroi is not opposed to any of the three components in principle and recognises their collective importance to Cardano's scalability roadmap. A proposal structure that draws cleaner lines between workstreams, or submits them independently, would allow each to be assessed on its own delivery evidence and risk profile.\n\nConclusion\nYoroi supports the goal of building a credible Layer 2 ecosystem on Cardano and respects the work that IO and Midgard Labs are undertaking. Our abstain is not a rejection of that direction, but a reflection that the current proposal structure makes it difficult to engage with each workstream on its own merits. We would welcome a resubmission that gives each component room to stand independently.\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
