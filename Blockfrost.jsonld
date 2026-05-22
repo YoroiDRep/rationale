@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nYoroi DRep votes ABSTAIN on \"Blockfrost: Maintenance and Next Generation Indexing.\" This position is not a judgment on the team or the value of the infrastructure they provide, but a considered view on proposal structure and the appropriate use of treasury resources.\nRationale\nProject Cayley addresses a well-defined infrastructure need. \nThe shift toward decentralized slice indexing is a logical response to the cost pressures that Leios will place on full-chain data providers, and the multi-chain architecture extending to Bitcoin opens meaningful longer-term possibilities. Yoroi supports the direction and recognises the technical credibility of the team behind it.\n\nThe bundled structure complicates evaluation. \nCombining new infrastructure development with an operational subsidy for an existing commercial service under a single governance action prevents each from being assessed on its own merits. The subsidy component, covering the ongoing cost of a free tier operated by a business with an active paid product, raises questions that deserve separate consideration rather than being folded into a broader infrastructure vote.\n\nA clearer commercial sustainability case would strengthen the proposal. \nWithout visibility into revenue, cost recovery, and the long-term funding model for the free tier, it is difficult to assess whether treasury support is structurally necessary or a transitional measure. Yoroi would be more inclined to support the operational component if it were accompanied by greater financial transparency and a defined path toward self-sustainability.\n\nConclusion\nYoroi values the role Blockfrost has played in the ecosystem and supports the ambition of Project Cayley. Our abstain reflects a structural concern about how this proposal is composed rather than any judgment on the team or the work. We would welcome a resubmission that separates the two components and allows the community to engage with each on its own terms."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
