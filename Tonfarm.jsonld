@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nYoroi DRep votes NO on \"[OriLife × TonFarm] Identifying 180 Million Durians Without Physical Labels\". This is not a judgment on the team or the underlying technology, but a considered view on whether the Cardano Treasury is the right funding vehicle for this deployment at this stage.\nRationale\nThe proposal's own framing undermines the case for treasury funding. \nIf Circular 11 and GACC create legally mandated demand, the natural funding source is procurement by the stakeholders who face that obligation. Treasury funds are better suited to public goods that cannot attract private or commercial capital, and this proposal has not fully made that case.\n\n\nEcosystem returns are not commensurate with the ask. \nThe 75,000 ADA locked at M4 and modest annual fee contributions within a closed MAGIC credit economy do not present a clear pathway to broader Cardano network participation. In a constrained budget cycle, allocations of this scale should demonstrate more direct ecosystem return.\n\n\nCommercial and government procurement channels are the more natural fit. \nThe agricultural traceability sector is established and commercially active. The Alliance's Bio-ID approach is genuinely differentiated, and we would encourage the team to explore sector-specific investment and government procurement as the primary funding pathway.\nConclusion\nYoroi has genuine respect for the Alliance's field work and commitment to a real supply-chain problem. Our NO reflects a view on funding appropriateness, not a dismissal of the project, and we remain open to a future proposal that addresses the return case more directly.\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
