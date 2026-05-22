@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nYoroi DRep votes YES on “Cardano Critical Integrations V2” as the necessary operational continuation of infrastructure the Cardano ecosystem already depends on.\nRationale\nMaintenance of live infrastructure is not optional. \nThe CCI V1 integrations are in production. Circle USDCx, LayerZero, Pyth, and Dune Analytics each carry recurring licensing, attestation, and operational costs that must be renewed for the integrations to remain functional. Allowing these to lapse would degrade infrastructure that protocols and users already rely on, and funding them through a single ratified budget is more efficient than managing each renewal as a separate governance action.\n\nFireblocks expands institutional access at a logical moment. \nInstitutional adoption requires custody infrastructure that meets regulatory and operational standards. A native Fireblocks integration gives exchanges, asset managers, and custodians a standard pathway to support ADA and Cardano Native Tokens without bespoke solutions. Including Year 1 Fireblocks costs within this cycle, alongside existing maintenance, is a sensible sequencing decision.\n\nGovernance and oversight structure is adequate. \nThe Pentad Steering Committee provides cross-organizational oversight with quorum requirements for disbursements, and Intersect administers funds under the established treasury smart contract framework. The lack of vendor-level cost disclosure is noted as a limitation, but the combination of multi-party governance, milestone-based drawdowns, and mandatory return of unused funds provides sufficient accountability for Yoroi to support this proposal.\n\nConclusion\nYoroi votes YES on CCI V2 as a necessary and appropriately governed commitment to sustaining the institutional integration infrastructure Cardano has already invested in building.\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
