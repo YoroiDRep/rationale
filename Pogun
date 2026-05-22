@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nYoroi DRep votes ABSTAIN on \"Pogun: Capital Without Compromise.\" While Yoroi recognises the strategic opportunity this proposal targets and the technical effort behind it, the proposal raises questions around delivery sequencing and the scale of the treasury commitment at this stage of development.\nRationale\nA promising concept at an early stage of validation. \nPogun's framing around Bitcoin DeFi is strategically relevant, and the oracle-free bilateral lending design is a genuine differentiation from conventional pool-based protocols. The proposal asks the treasury to fund three integrated components simultaneously, however, before any of them has reached mainnet, which places a significant delivery burden on a team without an established Cardano track record at this scale.\n\nBridge execution risk warrants careful consideration. \nThe BitVM bridge is the most technically complex of the three components, and it depends on cryptographic infrastructure that has not yet been demonstrated in production on Cardano. Yoroi does not question the theoretical robustness of the 1-of-N security model, but the gap between a sound design and a deployed, audited system handling real Bitcoin is substantial enough to warrant a more staged approach to funding.\n\nThe treasury ask would be stronger with a phased structure. \nA proposal that funds the credit market to mainnet first, with subsequent disbursements contingent on verified delivery, would be significantly easier to support. Yoroi encourages the team to consider resubmitting with a structure that better reflects the current stage of development and gives the community a meaningful opportunity to validate progress before committing the full amount.\n\nConclusion\nYoroi recognises the ambition behind Pogun and the genuine strategic opportunity it targets. Our decision to abstain is not a dismissal of the project, but a considered view that the scale of the treasury commitment should be matched by a clearer delivery foundation. We would welcome a revised proposal that takes a more incremental approach and look forward to engaging with the team as the project matures."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
