@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nYoroi DRep votes YES on “Pebble & Ecosystem Maintenance: TypeScript Core of Cardano”, recognising this resubmission as a materially improved proposal that addresses the concerns raised in our prior ABSTAIN position.\nRationale\nA focused resubmission that addresses prior concerns. \nThe combined HLabs proposal that Yoroi abstained on bundled Gerolamo, Pebble, and tooling maintenance into a single 8 million ADA request. This proposal separates those tracks, removes the node implementation entirely, and reduces the ask to 4,600,000 ADA. The concerns Yoroi raised about scope and proportionality have been directly addressed by the resubmission structure HLabs has chosen.\n\nPebble’s performance case is now independently verified. \nAt the time of our prior vote, the case for Pebble rested largely on the team’s own claims. The UPLC-CAPE benchmark results, produced through IOG’s independent evaluation framework, now show that Pebble outperforms Aiken on CPU and memory budget and is competitive with Plutarch. Combined with a TypeScript-shaped syntax that serves the largest developer community on Cardano, this positions Pebble as a complementary on-ramp rather than a redundant one.\n\nTooling maintenance is load-bearing infrastructure. \nThe HLabs TypeScript stack is a dependency of Mesh, Lucid Evolution, Midgard, and numerous production dApps. Keeping it synchronised with protocol upgrades is not discretionary work; it is the foundational maintenance that keeps the TypeScript ecosystem coherent through hard forks. Funding it here avoids pushing that cost onto dozens of downstream teams who would otherwise have to absorb it independently.\n\nConclusion\nYoroi votes YES on this proposal as a well-scoped, appropriately priced successor to the prior HLabs submission, and one that reflects the kind of focused, evidence-based resubmission we encouraged.\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
