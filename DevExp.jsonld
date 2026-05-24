@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nYoroi DRep revises its prior ABSTAIN to YES on “IO: Developer Experience Initiative”, following a reassessment of the balance between structural concerns and strategic urgency.\n\nRationale\n\nThe strategic case has become harder to set aside. Developer experience is time-sensitive, and the cost of a further delay to a well-motivated, empirically grounded programme is material. Yoroi now considers the delivery risks manageable relative to the importance of the goal, particularly given IO’s demonstrated capacity to execute at this scale.\n\nMonitoring will be our accountability mechanism. Since our structural concerns have not been formally resolved, Yoroi intends to hold IO to refining its success metrics and coordination approach through the oversight process. A YES vote is not an endorsement of every element of the delivery design.\n\nConclusion\n\nYoroi votes YES. We are making this revision openly, acknowledging that the proposal is unchanged and that our prior concerns remain live. Our judgement is that supporting this initiative now, with active oversight, is more responsible than deferring again on grounds that may not be resolvable before the vote closes."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
