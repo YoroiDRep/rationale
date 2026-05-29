@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nYoroi DRep votes YES on \"Cardano at TOKEN2049 Singapore 2026: Baseline 'Platinum' Sponsorship Proposal\", following updates to the proposal that have addressed our core concerns as a related entity.\n\nRationale\nGovernance integrity upheld\nEMURGO is the proposer of this action, and Yoroi's initial inclination was to abstain on that basis. EMURGO has since waived its 15% management fee in full, committing to return it to the Treasury, which means every ada requested reflects true third-party vendor costs and EMURGO derives no financial benefit from this proposal passing. That revision, alongside Charles Hoskinson's personal commitment to amplify Cardano's presence, gives us sufficient confidence to move from abstention to support.\n\nBuilt for Cardano builders \nThe core purpose of this activation is to put the people actually building on Cardano in front of the right audiences. TOKEN2049 Singapore is the premier gathering of institutional investors and enterprise decision-makers in the Asian Web3 market, and the Platinum tier gives Cardano builders a stage at one of the most important events in the industry.\n\n\nAccountability mechanisms are in place \nAll funds flow through Intersect's audited smart contract infrastructure, with milestone-based disbursements, a public dashboard, and a full post-event report committed within 60 days of the event. Any surplus resulting from ADA price appreciation is contractually committed to return to the Treasury within six months.\n\nConclusion\n\nYoroi supports this proposal as a community-first activation that directly benefits Cardano builders, structured with appropriate accountability and delivered by an entity with a proven track record at TOKEN2049. With the administration fee removed and additional personal resources committed, the basis for abstention no longer holds, and Yoroi votes YES."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
