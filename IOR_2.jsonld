@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nYoroi DRep votes YES on \"Cardano Vision 2026: Human Centred, Scalable, Post Quantum Secure - IO Research\". Yoroi previously voted ABSTAIN due to concerns that the proposal's bundled structure limited the ability to assess and prioritise individual research streams within a single funding decision. Following further review, we concluded that the strategic importance of the overall research program and IOR's demonstrated delivery record outweigh those governance concerns, leading us to update our vote to YES.\nRationale\n• Strategic importance of the research agenda\nThe proposal addresses several areas that are important to Cardano's future development, including scalability, post-quantum security, interoperability, governance, identity, and developer experience. While not every workstream carries the same level of urgency, together they represent a coordinated investment in Cardano's long-term technical foundations.\n• Benefits outweigh structural concerns\nOur original abstention reflected a preference for greater visibility into how individual research priorities could be evaluated within a proposal of this scale. While we continue to believe that additional granularity would improve future treasury decision-making, we no longer consider the bundled structure sufficient reason to withhold support. Given IOR's proven delivery record and the strategic value of maintaining Cardano's research pipeline, we believe supporting the proposal is the better outcome for the ecosystem.\nConclusion\nYoroi supports this proposal because the value of sustaining Cardano's long-term research capabilities outweighs our concerns regarding the proposal's structure.\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
