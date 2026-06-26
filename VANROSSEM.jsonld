@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nYoroi DRep votes YES on \"Hard Fork to Protocol Version 11 ('van Rossem' Hard Fork)\" as a practical and well-managed protocol upgrade that directly benefits developers and the broader ecosystem.\n\nRationale\n• Expanded Plutus capabilities for developers.\nThe new primitives introduced across five CIPs unlock new possibilities for smart contract design and reduce execution costs for patterns that are common in production DApps today. These are targeted improvements with a direct effect on what developers can build and how efficiently they can build it.\n• Low disruption by design.\nAs an intra-era hard fork, this upgrade advances the protocol version without changing the ledger era, keeping the impact on SPOs, tooling, and existing applications to a minimum. Yoroi views this as the right way to deliver protocol improvements at this stage of the network's maturity.\n\nConclusion\nThe van Rossem hard fork is a clear and well-justified step forward for Cardano's smart contract platform. The scope is targeted, the implementation approach is careful, and the benefits to developers are concrete. On that basis, this proposal has Yoroi's full support."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
