@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Yoroi DRep votes YES on Reduce minPoolCost to 75 ada and increase Plutus Memory Limits (Part 2).\n\n- Change of Vote: Yoroi previously voted ABSTAIN on this proposal. Having considered the proposed changes further, we have decided to change our position to YES.\n\n- Why We Support It: Lowering minPoolCost to 75 ADA may help reduce the operating burden for stake pools, while increasing the Plutus memory limits gives developers and applications more room to operate within the network. These are practical adjustments that can support broader participation and continued growth across the Cardano ecosystem.\n\nYoroi supports moving these parameter changes forward and votes YES."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
